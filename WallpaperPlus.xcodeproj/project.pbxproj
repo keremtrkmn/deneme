@@ -69,11 +69,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3878E0224560CD300F50C09 /* View */ = {
+		B38195F82457757E00A89C47 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				B3EB623E2455E02C00E79D02 /* AppDelegate.swift */,
 				B3EB62402455E02C00E79D02 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		B38195F92457758F00A89C47 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB62442455E02C00E79D02 /* Main.storyboard */,
+				B3EB62492455E02F00E79D02 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B3878E0224560CD300F50C09 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				B3EB62422455E02C00E79D02 /* ViewController.swift */,
 				B3878E0024560A3800F50C09 /* DetailVC.swift */,
 				B3878DFE245605E800F50C09 /* TypeCell.swift */,
@@ -111,11 +127,11 @@
 		B3EB623D2455E02C00E79D02 /* WallpaperPlus */ = {
 			isa = PBXGroup;
 			children = (
+				B38195F92457758F00A89C47 /* Storyboard */,
+				B38195F82457757E00A89C47 /* Delegate */,
 				B3878E0324560CDC00F50C09 /* Model */,
 				B3878E0224560CD300F50C09 /* View */,
-				B3EB62442455E02C00E79D02 /* Main.storyboard */,
 				B3EB62472455E02F00E79D02 /* Assets.xcassets */,
-				B3EB62492455E02F00E79D02 /* LaunchScreen.storyboard */,
 				B3EB624C2455E02F00E79D02 /* Info.plist */,
 				B3878E042456158000F50C09 /* GoogleService-Info.plist */,
 			);
