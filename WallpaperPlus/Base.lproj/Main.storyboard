@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WallpaperPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VR3-GQ-bJZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="370" id="yXa-Tu-w1f" customClass="TypeCell" customModule="WallpaperPlus" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="370"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yXa-Tu-w1f" id="kw8-MY-t9o">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testphoto" translatesAutoresizingMaskIntoConstraints="NO" id="snt-Au-SRy">
+                                                    <rect key="frame" x="20" y="11" width="374" height="348"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="348" id="IfD-jE-6wF"/>
+                                                        <constraint firstAttribute="width" constant="374" id="S56-Ln-gRa"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="img_type_layer" translatesAutoresizingMaskIntoConstraints="NO" id="BAN-xu-fom" userLabel="typeCellLayer">
+                                                    <rect key="frame" x="20" y="291" width="374" height="68"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ds0-mw-BjG">
+                                                    <rect key="frame" x="33" y="306" width="348" height="45"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="snt-Au-SRy" firstAttribute="leading" secondItem="kw8-MY-t9o" secondAttribute="leadingMargin" id="1RI-ip-FRv"/>
+                                                <constraint firstItem="snt-Au-SRy" firstAttribute="top" secondItem="kw8-MY-t9o" secondAttribute="topMargin" id="Sz7-pJ-SMw"/>
+                                                <constraint firstItem="snt-Au-SRy" firstAttribute="trailing" secondItem="kw8-MY-t9o" secondAttribute="trailingMargin" id="elr-HH-rD4"/>
+                                                <constraint firstItem="snt-Au-SRy" firstAttribute="bottom" secondItem="kw8-MY-t9o" secondAttribute="bottomMargin" id="jUM-gc-YUY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="typeCellView" destination="snt-Au-SRy" id="oPm-ud-gjW"/>
+                                            <outlet property="typeLabel" destination="Ds0-mw-BjG" id="s36-V8-xO3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VR3-GQ-bJZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5l4-oh-XEa"/>
+                            <constraint firstItem="VR3-GQ-bJZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="I8G-uU-NWj"/>
+                            <constraint firstItem="VR3-GQ-bJZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NkB-Y7-yBf"/>
+                            <constraint firstItem="VR3-GQ-bJZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X7c-NY-dWy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="VR3-GQ-bJZ" id="fw0-ws-f18"/>
+                        <segue destination="xZ9-XJ-NyI" kind="presentation" identifier="toDetailVC" modalPresentationStyle="fullScreen" id="cTD-Sz-cPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3752.1739130434785" y="310.71428571428572"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="bsX-x0-w0Y">
+            <objects>
+                <viewController id="xZ9-XJ-NyI" customClass="DetailVC" customModule="WallpaperPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DRC-R6-pUd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WW2-KC-ZE2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UOe-Cv-CGr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3U-sF-Mdn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2821.739130434783" y="310.71428571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_type_layer" width="374" height="68"/>
+        <image name="testphoto" width="1055" height="1536"/>
+    </resources>
+</document>
